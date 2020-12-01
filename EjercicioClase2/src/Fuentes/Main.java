@@ -33,7 +33,7 @@ public class Main {
         matB.setMatriz(a,b);
         System.out.println("Matriz B\n" + matB.toString());
         matC=matA.sumaMatriz(matB);
-        System.out.println("Matriz C\n" + matC.toString());
+        System.out.println("Matriz Suma\n" + matC.toString());
     }
     
 }
