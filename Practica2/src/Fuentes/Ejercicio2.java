@@ -16,6 +16,7 @@ public class Ejercicio2 {
         }
         System.out.println("El promedio es: " + df.format(calcularPromedio(meses)));
         System.out.println("El numero de meses superiores al promedio es: " + (calcularSup(meses)));
+        System.out.println("El numero de meses inferiores al promedio es: " + (calcularInf(meses)));
     }
     
     public static double calcularPromedio(double aux[]){
@@ -30,6 +31,16 @@ public class Ejercicio2 {
         int j=0;
         for(int i=0;i<aux.length;i++){
             if(aux[i]>calcularPromedio(aux)){
+                j++;
+            }
+        }
+        return j;
+    }
+    
+    public static int calcularInf(double aux[]){
+        int j=0;
+        for(int i=0;i<aux.length;i++){
+            if(aux[i]<calcularPromedio(aux)){
                 j++;
             }
         }
