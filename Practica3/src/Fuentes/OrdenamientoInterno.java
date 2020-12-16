@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class OrdenamientoInterno {
 
     public static void main(String[] args) {
-        int[] arreglo;
+        /*int[] arreglo;
         int c;
         Scanner sc=new Scanner(System.in);
         System.out.println("Ingrese el tamaño del arreglo: ");
@@ -15,11 +15,16 @@ public class OrdenamientoInterno {
         System.out.println("Ingrese los elementos del arreglo: ");
         for(int i=0;i<c;i++){
             arreglo[i]=sc.nextInt();
-        }
+        }*/
+        int[] arreglo={15,67,8,16,44,27,12,35};
+        long end=0;
+        long start = System.currentTimeMillis();
         System.out.println("Lista inicial: " + imprimir(arreglo));
         //bubleSort(arreglo);
         //selectSort(arreglo);
         insertSort(arreglo);
+        end+=(System.currentTimeMillis()-start);
+        System.out.println("Tiempo: " + end + " ms");
     }
     
     public static void insertSort(int [] arreglo){

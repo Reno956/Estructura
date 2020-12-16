@@ -8,11 +8,15 @@ public class OrdenamientoQuickSort {
 
    
     public static void main(String[] args) {
-        int[] arreglo={79,21,15,99,88,65,75,85,76,46,84,24};
-        
+        //int[] arreglo={79,21,15,99,88,65,75,85,76,46,84,24};
+        int[] arreglo={15,67,8,16,44,27,12,35};
+        long end=0;
+        long start = System.currentTimeMillis();
         System.out.println("Lista inicial: " + imprimir(arreglo));
         quickSort(arreglo, 0, arreglo.length-1);
         System.out.println("Lista ordenada: " + imprimir(arreglo));
+        end+=(System.currentTimeMillis()-start);
+        System.out.println("Tiempo: " + end);
     }
     
     public static void quickSort(int[] arreglo,int i,int j){
