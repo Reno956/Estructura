@@ -17,8 +17,8 @@ public class OrdenamientoInterno {
             arreglo[i]=sc.nextInt();
         }
         System.out.println("Lista inicial: " + imprimir(arreglo));
-        bubleSort(arreglo);
-        selectSort(arreglo);
+        //bubleSort(arreglo);
+        //selectSort(arreglo);
         insertSort(arreglo);
     }
     
