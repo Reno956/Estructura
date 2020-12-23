@@ -1,0 +1,7 @@
+Estudiante No: 0
+Nombre: a
+Apellido: a
+ID: 123
+Direccion: abc
+Telefono: 123
+
