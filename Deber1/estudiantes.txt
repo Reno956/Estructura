@@ -1,0 +1,7 @@
+Estudiante No: 2
+Nombre: Luis
+Apellido: Molina
+ID: 1234
+Direccion: Quitumbe
+Telefono: 1234
+

@@ -1,0 +1,5 @@
+234 producto1
+158 producto15
+547 producto3
+107 producto10
+589 producto2
