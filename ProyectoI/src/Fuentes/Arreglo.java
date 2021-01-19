@@ -47,10 +47,8 @@ public class Arreglo {
     
     public void buscarSuma(int num){
         boolean flag=false;
-        //int i;
         int a=0;
         int b=0;
-        //int j=0;
         for(int i=0;i<Ar.length-1;i++){
             for(int j=i+1;j<Ar.length;j++){
                 if(Ar[i]+Ar[j]==num){
