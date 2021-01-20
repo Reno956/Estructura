@@ -11,7 +11,7 @@ public class Arreglo {
         Ar=new int[n];
         rd=new Random();
         for(int i=0;i<n;i++){
-            Ar[i]=rd.nextInt(10)+1;
+            Ar[i]=rd.nextInt(n)+1;
         }
     }
     
@@ -45,14 +45,13 @@ public class Arreglo {
         }
     }
     
-    public void buscarSuma(int num){
+    public String buscarSuma(int num){
+        String salida;
         boolean flag=false;
-        int i;
         int a=0;
         int b=0;
-        int j=0;
-        for(i=0;i<Ar.length-1;i++){
-            for(j=i+1;j<Ar.length;j++){
+        for(int i=0;i<Ar.length-1;i++){
+            for(int j=i+1;j<Ar.length;j++){
                 if(Ar[i]+Ar[j]==num){
                     flag=true;
                     a=i;
@@ -65,10 +64,11 @@ public class Arreglo {
             }
         }
         if(flag){
-            System.out.println("Numero encontrados: " + Ar[a] + " + " + Ar[b] + " = " + num);
+            salida="Numero encontrados: " + Ar[a] + " + " + Ar[b] + " = " + num;
         }else{
-            System.out.println("No existen dos numeros que sumados den como resultado: " + num);
+            salida="No existen dos numeros que sumados den como resultado: " + num;
         }
+        return salida;
     }
     
     public static void intercambiar(int[] arreglo,int i,int j){
