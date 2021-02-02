@@ -44,8 +44,8 @@ javax.swing.WindowConstants
 java.lang.invoke.MethodHandles$Lookup
 Fuentes.Arreglo
 java.lang.invoke.MethodHandles
-java.lang.Object
 java.util.Random
+java.lang.Object
 java.lang.String
 java.lang.invoke.StringConcatFactory
 ||:Fuentes.Main
