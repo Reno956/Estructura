@@ -17,7 +17,7 @@ public class MainR {
         System.out.println("\nMetodo Recursivo");
         startR = System.currentTimeMillis();
         hanrec.Hanoi(n,'A','B','C');
-        endR+=(System.currentTimeMillis()-startR);
+        endR+=System.currentTimeMillis()-startR;
         System.out.println("Tiempo: " + endR + " ms");
     }
 }

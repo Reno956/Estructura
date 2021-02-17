@@ -1,11 +1,11 @@
 
 package Fuentes;
 
-public class NodoPila {
+public class NodoCola {
     private int dato;
-    private NodoPila enlace;
-
-    public NodoPila(int dato) {
+    private NodoCola enlace;
+    
+    public NodoCola(int dato) {
         this.dato = dato;
         this.enlace=null;
     }
@@ -18,11 +18,11 @@ public class NodoPila {
         this.dato = dato;
     }
 
-    public NodoPila getEnlace() {
+    public NodoCola getEnlace() {
         return enlace;
     }
 
-    public void setEnlace(NodoPila enlace) {
+    public void setEnlace(NodoCola enlace) {
         this.enlace = enlace;
     }
 }
